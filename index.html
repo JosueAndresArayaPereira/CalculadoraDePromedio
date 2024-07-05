@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora de Notas</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Calculadora de Notas</h1>
+      <div class="actions">
+        <a id="cambiarTema">Cambiar Tema</a>
+      </div>
+    </header>
+    <main>
+      <div class="ingresoNotas">
+        <p>Ingreso de notas</p>
+        <div class="actions">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6"
+            width="24"
+            height="24"
+            id="quitarNota"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M15 12H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+            />
+          </svg>
+
+          <svg
+            id="agregarNota"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6"
+            width="24"
+            height="24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+            />
+          </svg>
+        </div>
+      </div>
+      <form>
+        <div class="notas"></div>
+        <button id="calculateButton">Calcular</button>
+      </form>
+    </main>
+    <footer>
+      <!--derechos reservados-->
+      <div class="derechos">
+        <p>© 2021 Calculadora de Notas. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+
+    <div class="notaMostrar">
+      <div class="detalleNota">
+        <p>Promedio de notas: <span id="mostrarPonderacion">70</span></p>
+        <button onclick="closeShowNote()">Cerrar</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
